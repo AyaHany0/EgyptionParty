@@ -1,5 +1,15 @@
 {
+  "name": "egyption-party",
+  "version": "1.0.0",
+  "private": true,
+  "homepage": "https://github.com/AyoyH/EgyptionParty",
+  "scripts": {
+    "build": "tailwindcss -i src/input.css -o dist/styles.css",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "devDependencies": {
-    "tailwindcss": "^3.4.5"
+    "tailwindcss": "^3.4.5",
+    "gh-pages": "^6.1.1"
   }
 }
